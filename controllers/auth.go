@@ -24,12 +24,12 @@ type Claims struct {
 
 // Signin handler to handle signin request
 func Signin(w http.ResponseWriter, r *http.Request) {
-	admin := os.Getenv("FLUME_DATABASE_ADMIN")
+	admin := os.Getenv("FLUME_FILE_STORAGE_ADMIN")
 	if len(admin) == 0 {
 		admin = "admin"
 	}
 
-	jwtKey := []byte(os.Getenv("FLUME_DATABASE_SECRET"))
+	jwtKey := []byte(os.Getenv("FLUME_FILE_STORAGE_SECRET"))
 	if len(jwtKey) == 0 {
 		jwtKey = []byte("this_is_a_secret_token")
 	}

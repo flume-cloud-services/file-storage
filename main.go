@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/flume-cloud-services/database/middleware"
+	"github.com/flume-cloud-services/file-storage/middleware"
 	"github.com/flume-cloud-services/file-storage/controllers"
 )
 
