@@ -32,7 +32,7 @@ func PostFile(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusInternalServerError)
 	}
 
-	if needAuth == "true" {
+	if needAuth == "yes" {
 		directory = "./private/"
 	} else {
 		directory = "./public/"
