@@ -19,7 +19,7 @@ docker run -d -p 8080:8080 flumecloudservices/file-storage
 
 ```bash
 mkdir $GOPATH/src/github.com/flume-cloud-services && cd $GOPATH/src/github.com/flume-cloud-services
-git clone https://github.com/flume-cloud-services/file-storage.git
+git clone https://github.com/flume-cloud-services/file-storage.git && cd file-storage
 go get -d -v
 go install -v
 
